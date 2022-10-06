@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristo Redentor - Ponto Turistico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ORIENTAÇÕES DO TRABALHO DA DISCIPLINA
+    Crie uma página em HTML e CSS divulgando um ponto turístico que você mais gosta e convidando os leitores do site a conhecê-lo. Insira vídeos, imagens e personalize o seu projeto. -->
+</head>
+<style>
+    body {
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-top: 11vh;
+    }
+
+    #Inicio {
+        margin-bottom: 16vh;
+        overflow: hidden;
+        text-align: justify;
+    }
+
+    .divpreco {
+        margin-bottom: 5vh;
+        overflow: hidden;
+        text-align: justify;
+    }
+
+    .divsobre {
+        overflow: hidden;
+        text-align: justify;
+        margin-bottom: 3vh;
+
+    }
+
+    .divcuriosidade {
+        margin-bottom: 15vh;
+        overflow: hidden;
+        text-align: justify;
+    }
+
+    .imgcuriosidade {
+        width: 35vw;
+        height: 30vh;
+    }
+
+    hr {
+        margin-bottom: 5vh;
+    }
+
+    .imgesquerda {
+        padding-right: 1.4vw;
+    }
+
+    .imgdireita {
+        padding-left: 0.6vw;
+    }
+
+    .textoesquerdo {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        border-right: 0.2vw solid red;
+    }
+
+    .textodireito {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        border-left: 0.2vw solid red;
+    }
+
+    .textopreco {
+        font-size: 5px;
+    }
+
+    .legenda{
+        background-color: rgba(66, 64, 64, 0.76);
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="Menu">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7deddc4c-b15b-4bec-b5b6-00a0e317fd1a/degg9xx-9e3b0ff8-03a6-45a6-a9da-e64966909ac0.jpg/v1/fill/w_1920,h_1243,q_75,strp/cristo_redentor_by_andyxenoart_degg9xx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI0MyIsInBhdGgiOiJcL2ZcLzdkZWRkYzRjLWIxNWItNGJlYy1iNWI2LTAwYTBlMzE3ZmQxYVwvZGVnZzl4eC05ZTNiMGZmOC0wM2E2LTQ1YTYtYTlkYS1lNjQ5NjY5MDlhYzAuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Qo-wyL1EFi5ZvsaXoxAIBkzk7begxSVcKHUB8rqjPTw"
+                        alt="" width="150" height="80">
+                </a>
+            </div>
+            <div class="container-fluid">
+                <h1 class="navbar-brand" href="#">Cristo Redentor</h1>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Curiosidade">Curiosidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Preco">Preço</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Localizacao">Localização</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="" tabindex="0">
+        <div id="Inicio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#Inicio" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#Inicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#Inicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://tudoverdade.com.br/wp-content/uploads/2021/10/IMAGEM_NOTICIA_0.jpg"
+                        class=" rounded mx-auto d-block" width="100%" height="700vh" alt="...">
+                    <div class="carousel-caption d-none d-md-block legenda">
+                        <h5>Cristo Redentor gera 21 mil empregos e movimenta R$ 1,4 bi ao ano, aponta FGV</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://aventurasnahistoria.uol.com.br/media/uploads/brasil/cristo_redentor_lLwgS4Y.jpg"
+                        class="rounded mx-auto d-block" width="100%" height="700vh" alt="...">
+                    <div class="carousel-caption d-none d-md-block legenda">
+                        <h5>Cristo Redentor é eleito uma das novas sete maravilhas do mundo
+                        </h5>
+                        <p>Estátua é escolhida com base nos critérios de beleza, complexidade, valor histórico, relevância cultural e significado arquitetônico. Mais de 100 milhões de pessoas participaram da eleição.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://diariodorio.com/wp-content/uploads/2021/03/cristo-redentor-2-1280x720.jpg"
+                        class="rounded mx-auto d-block" width="100%" height="700vh" alt="...">
+                    <div class="carousel-caption d-none d-md-block legenda">
+                        <h5>Apesar de ser a maior obra do estilo Art-Deco, o Cristo Redentor é apenas a 5ª maior do mundo das estátuas de Jesus Cristo.</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Inicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Inicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 id="Sobre" class="fw-bold">Sobre</h2>
+        <div class="divsobre">
+            <div class="row">
+                <div class="col col-6">
+                    <p>A cidade do Rio de Janeiro tem inúmeros cartões-postais. Um dos mais icônicos é o Cristo
+                        Redentor, famoso por ser uma das Sete Maravilhas do Mundo Moderno. Mas quando esse monumento foi
+                        criado? Por quem? Como ele foi feito?</p>
+                    <h6 class="fw-bold">A Ideia</h6>
+                    <p>
+                        Tudo começou em 1859, quando o padre lazarista francês Pierre-Marie Boss, da Igreja do Colégio
+                        Imaculada Conceição, teve o sonho de construir um monumento religioso no alto do Monte
+                        Corcovado, que tem 710 metros de altura. O padre registrou essa ideia no livro “Imitação de
+                        Cristo”, de 1903.
+
+                        A proposta do padre começou a materializar-se nos preparativos para o centenário da
+                        Independência do Brasil, celebrado em 1922. Um ano antes foi aberta uma disputa entre os
+                        projetos para o monumento. O vencedor foi Heitor da Silva Costa.
+
+                        Nessa mesma época, mais de 22 mil mulheres fizeram um abaixo-assinado para pedir ao presidente
+                        do Brasil da época, Epitácio Pessoa, autorização para a construção do monumento.
+
+                        A ideia era a de que o Cristo fosse construído apenas com doações dos brasileiros. Com essa
+                        finalidade, em 1923, a Arquidiocese do Rio de Janeiro lançou a semana do Monumento, na qual
+                        foram arrecadados mil contos de réis. Anos depois, foram feitas novas arrecadações. No total, a
+                        construção custou 2.500 contos de reis, o que equivale a R$ 9,5 milhões.
+                    </p>
+                </div>
+                <div class="col col-4 offset-1">
+                    <img
+                        src="http://2.bp.blogspot.com/-wgezd2_BYVk/VOyEgyzXRrI/AAAAAAAAghs/Z_qsKauqvj0/s1600/Hist%C3%B3ria%2Bdo%2BCristo%2BRedentor%2B-%2BFOTOS%2B1.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://s2.static.brasilescola.uol.com.br/img/2019/03/cristo-redentor.jpg" width="600vw"
+                        height="310vh">
+                </div>
+                <div class="col-6 offset-4">
+                    <h6 class="fw-bold">O monumento</h6>
+                    <p>
+                        Os criadores do Cristo Redentor são o desenhista Heitor da Silva Costa, o pintor Carlos Oswald e
+                        o escultor Maximiliam Paul Landowsky, que esculpiu a cabeça e as mãos do monumento.
+
+                        O Cristo Redentor encontra-se de braços abertos, formando uma cruz, e tem 38 metros de altura, o
+                        que equivale a um edifício de 13 andares. Desse total, 30 metros são do monumento e oito do
+                        pedestal. Cada braço tem área de 88 metros quadrados e o pé mede 1,35 metro. Somente a cabeça
+                        pesa 30 toneladas.
+                        "Os criadores do Cristo Redentor são o desenhista Heitor da Silva Costa, o pintor Carlos Oswald
+                        e o escultor Maximiliam Paul Landowsky, que esculpiu a cabeça e as mãos do monumento.
+
+                        O Cristo Redentor encontra-se de braços abertos, formando uma cruz, e tem 38 metros de altura, o
+                        que equivale a um edifício de 13 andares. Desse total, 30 metros são do monumento e oito do
+                        pedestal. Cada braço tem área de 88 metros quadrados e o pé mede 1,35 metro. Somente a cabeça
+                        pesa 30 toneladas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h2 id="Curiosidade">Curiosidades</h2>
+        <br>
+        <br>
+        <div class="divcuriosidade">
+            <div class="row">
+                <div class="col col-6 align-self-center textoesquerdo">
+                    <h4>O Cristo Redentor possui um coração</h4>
+                    <br>
+                    <p>Esse é um fato pouco conhecido, mas sim o Cristo Redentor possui um coração visível no lado
+                        externo e interno.
+
+                        Localizado no 9º andar do monumento, o coração feito em pedra sabão o mesmo material do exterior
+                        da estatua, possui seu interior oco e guarda uma garrafa com o nome das famílias dos operários
+                        que trabalharam na construção do Cristo Redentor.</p>
+                </div>
+                <div class="col col-6 video-container">
+                    <figcaption class="figure-caption">Veja imagens do coração do cristo na reportagem da Isabele
+                        Benito:</figcaption>
+                    <iframe class="imgcuriosidade imgdireita" src="https://www.youtube.com/embed/SG3LK2YJbQY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col col-6">
+                    <img class="imgcuriosidade imgesquerda"
+                        src="https://www.comandantenobre.com.br/wp-content/uploads/2020/11/foto-dos-pes-do-cristo-redentor-no-rio-de-janeiro.jpg.webp">
+
+                </div>
+                <div class="col col-6 textodireito align-self-center">
+                    <h4>Curiosidade sobre os pés</h4>
+                    <br>
+                    <p>Quem já visitou o Cristo Redentor sabe que não é possível ver seus pés, mas sim o monumento
+                        possui pés.
+
+                        Por de baixo do manto, os pés descalços são acessíveis através das escadarias internas ou de um
+                        trem de acesso à área interna da estatua. Os pés estão fixos ao pedestal que da base e
+                        sustentação a estrutura. </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col col-6 align-self-center textoesquerdo">
+                    <h4>Os braços do Cristo</h4>
+                    <br>
+                    <p>Inicialmente o Cristo Redentor empunharia uma Cruz e um globo terrestre, mas ao invés disso
+                        ganhou braços abertos, simbolizando a proteção e o amor.
+
+                        De uma mão a outro a envergadura do cristo mede 30 metros, uma curiosidade pouco conhecida e que
+                        o braço direito tem cerca de 40cm a menos que o esquerdo. Claro isso é uma diferença
+                        imperceptível a olho nu e totalmente irrelevante diante da majestosidade do Cristo Redentor.
+
+                        Outra coisa muito legal é a possibilidade de acessar o exterior do cristo através de aberturas
+                        nos braços, mas essa é apenas para os fortes de coração.</p>
+                </div>
+                <div class="col col-6">
+
+                    <img class="imgcuriosidade imgdireita"
+                        src="https://www.comandantenobre.com.br/wp-content/uploads/2020/11/curiosidades-sobre-os-bracos-do-cristo-redentor.jpg.webp">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col col-6">
+                    <img class="imgcuriosidade imgesquerda"
+                        src="https://www.comandantenobre.com.br/wp-content/uploads/2020/11/raio-caindo-no-cristo-redentor.jpg.webp">
+
+                </div>
+                <div class="col col-6 textodireito align-self-center">
+                    <h4>O cristo protege o Corcovado dos raios</h4>
+                    <br>
+                    <p>Algo muito impressionante de se ver são os raios que caem direito no Cristo Redentor, mais
+                        precisamente em sua cabeça onde o cristo tem uma coroa de espinhos com a função de para-raios.
+
+                        Durante a época das tempestades o monumento chega a ser atingido por uma média de 20 raios por
+                        mês, uma quantidade impressionantes. O lábio inferior, a ponta de um dos dedos e uma das
+                        sobrancelhas já foi atingida por esses raios.</p>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col col-6 align-self-center textoesquerdo">
+                    <h4>O que o Cristo Redentor vê?</h4>
+                    <br>
+                    <p>Certamente o Cristo tem uma das vistas mais privilegiadas do Rio de Janeiro, podendo observar
+                        toda a cidade do Rio, incluindo praias e toda a zona metropolitana da cidade.
+
+                        Indo um pouco além da cidade do Rio de Janeiro, o Cristo tem uma visão do Atlântico e poderia
+                        ver o pedacinho sudoeste do continente africano, na costa da Namíbia.</p>
+                </div>
+                <div class="col col-6">
+                    <img class="imgcuriosidade imgdireita"
+                        src="https://www.comandantenobre.com.br/wp-content/uploads/2020/11/vista-do-cristo-redentor.jpg.webp">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <h2 id="Preco">Preços</h2>
+        <br>
+        <h4>Como chegar</h4>
+        <br>
+        <div class="divpreco">
+            <div class="row">
+                <div class="col col-6">
+                    <h5>De van oficial:</h5>
+                    <p>Ingressos disponíveis para compra pelo site
+                        <a href="www.paineirascorcovado.com.br">www.paineirascorcovado.com.br</a>
+                    </p>
+
+                    <p>O ingresso para o serviço de vans oficiais deve ser adquirido no Largo do Machado em frente a
+                        igreja
+                        da Glória, ou na Praça do Lido, em Copacabana, ou no Centro de Visitantes Paineiras Corcovado,
+                        de
+                        onde partem os veículos com destino ao Cristo Redentor. Possuem hora marcada e preferência pela
+                        compra on-line.</p>
+
+                </div>
+                <div class="col col-3">
+                    <h5>Preços:<h5>
+
+                            <h6>ENTRADA BAIXA TEMPORADA</h6>
+                            <p>Embarque Paineiras – R$ 43,40 <br>
+                                Embarque Copacabana – R$ 79,40 <br>
+                                Embarque Largo do Machado – R$ 79,40</p>
+
+                            <h6>IDOSO (acima de 60 anos sendo brasileiros ou estrangeiros residentes no Brasil)
+                                ALTA/BAIXA
+                                temporada</h6>
+                            <p>Embarque Paineiras – R$ 10,70 <br>
+                                Embarque Largo do Machado – R$ 46,70 <br>
+                                Embarque Copacabana – R$ 46,70</p>
+                </div>
+                <div class="col col-3">
+                    Horário de Funcionamento da Bilheteria <br>
+                    Largo do Machado e Copacabana: 08hs às 15hs <br>
+                    Finais de Semana: 08hs às 16hs <br>
+                    Centro de Visitantes Paineiras: 08hs às 16hs <br>
+                    Finais de Semana: 8h às 17hs
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-6">
+                <h5>De trem:</h5>
+                <p>Ingressos disponíveis para compra pelo site
+                    <a href="https://www.tremdocorcovado.rio">tremdocorcovado.rio</a>
+                </p>
+
+                <p>Desde 01/07/2016, todos os ingressos do Trem do Corcovado têm hora marcada. A bilheteria do Trem do
+                    Corcovado não vende bilhetes para o mesmo dia. A bilheteria funcionará somente para troca de
+                    vouchers dos clientes que comprarem os bilhetes com antecedência pela internet, APP ou nos pontos de
+                    vendas credenciados.</p>
+
+            </div>
+            <div class="col-3 textopreco align-self-center">
+                <h5>Preços:<h5>
+
+                        Ingresso inteiro – Alta Temporada*: R$ 105,50 <br>
+                        Ingresso inteiro – Baixa Temporada*: R$ 83,50 <br>
+                        Idoso (acima de 60 anos residente no Brasil) R$ 30,00 <br>
+                        Criança (5 a 11 anos) R$ 60,00
+
+            </div>
+            <div class="col col-3 align-self-center">
+                Crianças até 4 anos não pagam, desde que estejam no colo do seu responsável. <br>
+                Necessária comprovação da idade por documento. <br>
+                * Inclui transporte de ida e volta e acesso ao monumento do Cristo Redentor. <br>
+                * Todos sábados e domingos e feriados são considerados alta.
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12 align-self-center">
+            <p>Atenção! Antes de visitar o local, acesse o site oficial para conferir se não há alteração na
+                programação/funcionamento.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <hr>
+    <h2 id="Localizacao">Localização</h2>
+    <div class="row">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17477.318844512425!2d-43.21613777627317!3d-22.94456627606304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fd5984aa13f%3A0x9dc984d7019502de!2sCristo%20Redentor!5e0!3m2!1spt-BR!2sbr!4v1663020497710!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
